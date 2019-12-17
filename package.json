@@ -1,0 +1,22 @@
+{
+  "name": "notewriter-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "npm run clean && mkdir build && babel ./ --ignore 'node_modules,build,.github,.nyc_output' -s -d build",
+    "start": "npm run build && node ./build/server.js",
+    "dev": "babel-watch server.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "express": "~4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
