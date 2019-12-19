@@ -1,6 +1,5 @@
 import express from 'express';
 import dotenv from 'dotenv';
-const mongoose = require('./database/database.js');
 
 dotenv.config();
 
@@ -13,6 +12,5 @@ app.use(require('morgan')('dev'));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
 
 export default app;
