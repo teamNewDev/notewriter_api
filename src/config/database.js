@@ -1,9 +1,7 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+const mongoose = require('mongoose');
+require('dotenv').config();
 
-(async () => {
-  await mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
-})();
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 
 const db = mongoose.connection;
 
@@ -15,4 +13,4 @@ db.once('open', () => {
   console.log('Database successfully connected');
 });
 
-export default mongoose;
+module.exports = mongoose;
