@@ -8,7 +8,7 @@ const noteSchema = new Schema({
     required: true,
   },
   tag_id: {
-    type: Number,
+    type: Schema.Types.ObjectId,
     required: true,
   },
   title: {
