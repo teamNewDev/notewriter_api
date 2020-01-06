@@ -9,7 +9,7 @@ mongoose.connect(process.env.DATABASE_URL, {
 const db = mongoose.connection;
 
 db.on('error', () => {
-  console.log('An error occured. Database not connected');
+  console.log('An error occurred. Database not connected');
 });
 
 db.once('open', () => {
