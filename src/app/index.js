@@ -6,5 +6,5 @@ import { tagMutations, tagQueries } from './tag';
 
 export default new GraphQLSchema({
   query: userQueries,
-  mutation: userMutations
+  mutation: collectionMutations
 });
