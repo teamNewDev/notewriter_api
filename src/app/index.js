@@ -5,6 +5,7 @@ import { noteMutations, noteQueries } from './note';
 import { tagMutations, tagQueries } from './tag';
 
 export default new GraphQLSchema({
-  query: userQueries,
+  // query: userQueries,
+  query: noteQueries,
   mutation: collectionMutations
 });
