@@ -22,7 +22,7 @@
     "express-graphql": "^0.9.0",
     "graphql": "^14.5.8",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.8.1",
+    "mongoose": "^6.13.12",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
